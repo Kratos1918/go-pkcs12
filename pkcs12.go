@@ -416,7 +416,7 @@ func DecodeChain(pfxData []byte, password string) (privateKey interface{}, certi
 		return nil, nil, nil, err
 	}
 
-	bags, encodedPassword, err := getSafeContents(pfxData, encodedPassword, 1, 2)
+	bags, encodedPassword, err := getSafeContents(pfxData, encodedPassword, 1, 3)
 	if err != nil {
 		return nil, nil, nil, err
 	}
